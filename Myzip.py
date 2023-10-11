@@ -9,7 +9,7 @@ def mymappad(*seq, pad = None):
     while any(seq):
         res.append(tuple(S.pop(0) if S else pad for S in seq))
     return res
-def myzip2( *seq):
+def myzip2(*seq):
     iters = list(map(iter, seq))
     while iters:
         res = [next(i) for i in iters]
